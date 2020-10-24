@@ -22,7 +22,9 @@
     <!-- header.html:END -->
 
     <!-- menu.html:START-->
-    <div th:replace="blog/fragments/menu.html :: template"></div>
+    <div th:replace="blog/fragments/menu.html :: template
+    (items = ${menuItems})">
+    </div>
     <!-- menu.html:END-->
 
     <!-- banner.html:START-->
